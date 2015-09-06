@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
-  database: bridge_production
-  username: bridge
-  password: <%= ENV['BRIDGE_DATABASE_PASSWORD'] %>
+  database: heroku_338e4d01673121b
+  username: b3d1a2e53c0d4a
+  password: 481127cb
+  host: us-cdbr-iron-east-02.cleardb.net

@@ -78,5 +78,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
   
   # for heroku
-  config.serve_static_assets = true
+  config.serve_static_files = true
 end
