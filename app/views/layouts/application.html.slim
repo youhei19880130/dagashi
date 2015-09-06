@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    title
+      | Bridge
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  body
+
+  div.navbar.navbar-default
+    div.container
+      a.navbar-brand href="#" DAGASHI
+  div.container
+    ul.nav.nav-tabs
+      li.active
+        a href="#1" data-toggle="tab" category_1
+      li
+        a href="#2" data-toggle="tab" category_2
+      li
+        a href="#3" data-toggle="tab" category_3
+      li
+        a href="#4" data-toggle="tab" category_4
+      li
+        a href="#5" data-toggle="tab" category_5
+    div#myTabContent.tab-content
+      div.tab-pane.fade.active.in#1 category_1
+      div.tab-pane.fade#2 category_2
+      div.tab-pane.fade#3 category_3
+      div.tab-pane.fade#4 category_4
+      div.tab-pane.fade#5 category_5
+
+    == yield

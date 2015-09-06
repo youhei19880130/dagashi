@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<!--if lt 8html.no-js.lt-ie8
+-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <!-- if IEmeta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    -->
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- if lt IE 9
+    script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    -->
+    <!-- stylesheets-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+  </head>
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+    <header role="banner" class="top-header navbar navbar-inverse navbar-fixed-top bs-docs-nav">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target=".bs-navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="http://iarouse.com/" target="_blank" class="navbar-brand">iArouse</a>
+        </div>
+        <nav role="navigation" class="collapse navbar-collapse bs-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Docs</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="content" class="bs-header">
+      <div class="container">
+        <h1>Documentation</h1>
+        <p>The product instruction</p>
+      </div>
+    </div>
+    <div class="container bs-docs-container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="bs-sidebar hidden-print">
+            <ul class="nav bs-sidenav">
+              <li><a href="#thanks">Thanks</a></li>
+              <li><a href="#intro">Introduction</a></li>
+              <li><a href="#feat">Features</a></li>
+              <li><a href="#file-structure">File Structure</a></li>
+              <li><a href="#bower">Dependencies Management with Bower</a></li>
+              <li><a href="#grunt">Automation with Grunt</a></li>
+              <li><a href="#run">How to Run It?</a></li>
+              <li><a href="#use">How to Use It (Develop with It)?</a></li>
+              <li><a href="#basic_html">Basic Template Structure</a></li>
+            </ul>
+          </div>
+        </div>
+        <div role="main" class="col-md-9"><a href="https://wrapbootstrap.com/user/arousing" target="_blank"><img style="z-index: 1100; position: fixed; top: 0; right: 0; border: 0;" src="assets/img/contact_me.png" alt="contact me"></a>
+          <section id="thanks">
+            <div class="page-header">
+              <h1>Thank you</h1>
+            </div>
+            <p class="lead">Thank you for purchasing. Feel free to <a href="https://wrapbootstrap.com/user/arousing" target="_blank">contact me</a> if you have any questions.</p>
+            <P class="lead">Also, <a href="https://wrapbootstrap.com/user/arousing" target="_blank">email me</a> if you have any feature request or advice, I'll be glad to know.</P>
+          </section>
+          <section id="intro">
+            <div class="page-header">
+              <h1>Introduction</h1>
+            </div>
+            <p class="lead">Flatify is a fully responsive admin web App built with Bootstrap & AngularJS. It uses Sass CSS which makes it easy to modify.</p>
+          </section>
+          <section id="feat">
+            <div class="page-header">
+              <h1>Features</h1>
+            </div>
+            <ul>
+              <li> <strong>Responsive Design.</strong></li>
+              <li> <strong>Web App</strong> (Single Page Application) Built with <strong>AngularJS.</strong><strong> Fully AJAX</strong> powered, never refresh the entire page again. Faster, smoother.</li>
+              <li> <strong>Runnable Task Application.</strong> Try it out.</li>
+              <li> <strong>Internationalization (i18n) and Localization (l10n) support.  </strong> Add English, Español(Spanish), 日本語(Japanese), 中文(Chinese), Deutsch(German), français(French), Italiano(Italian), Portugal(Portuguese), Русский язык(Russian), 한국어(Korean)
+                 for demo.
+              </li>
+              <li>Solid Workflow with <a href="http://yeoman.io/">Yeoman</a>, scaffolding with <a href="http://yeoman.io/">Yo</a>, dependencies (plugins) managment with <a href="http://bower.io/">Twitter Bower</a>, tasks automation with <a href="http://gruntjs.com/">Grunt</a>, make all things organised.</li>
+              <li> <strong>Realtime</strong> Form Validation.</li>
+              <li>Build with <strong>Sass CSS</strong> (Scss files are included). Easy modification with variables.</li>
+              <li> <strong>Multiple Colors support</strong>, you can <strong>build your own</strong> by change a few variables.</li>
+              <li> <strong>Many </strong> widgets and components.</li>
+              <li> <strong>Light</strong> Weight.</li>
+              <li>Built with Bootstrap 3.</li>
+              <li>Valid HTML5 and CSS3</li>
+              <li>Cross Browsers </li>
+              <li>And much more.</li>
+            </ul>
+          </section>
+          <section id="file-structure">
+            <div class="page-header">
+              <h1>File Structure</h1>
+            </div>
+            <p class="lead">Within the download you'll find the following file structure and contents</p>
+            <p>Once downloaded, unzip the compressed folder  and you'll see something like this:</p>
+            <pre class="prettyprint">Flatify/
+├── Flatify/                       ───> Contains the develop version of Flatify Admin Template.
+│   ├── client/                    └──> All front end files are in this folder.
+│   │     ├── app/                            └──> contains all the js and html template files
+│   │     ├── fonts/                          └──> contains icon fonts.
+│   │     ├── i18n/                           └──> files for i18n (Internationalization)
+│   │     ├── images/                         
+│   │     ├── styles/                         └──> All the custom stylesheets
+│   │     ├── favicon.ico
+│   │     └── index.html
+│   ├── .bowerrc
+│   ├── .editorconfig
+│   ├── .gitattributes
+│   ├── .jshintrc
+│   ├── .travis.yml
+│   ├── bower.json
+│   ├── CHANGELOG.md
+│   ├── Gruntfile.js
+│   └── package.json
+├── dist/                         ───> Contains the distribution version of Flatify Admin Template.
+└── documentation/                ───> Where the help documentation is.</pre>
+            <p class="lead">Introduction of the important files:</p>
+            <dl class="dl-horizontal">
+              <dt>".bowerrc"</dt>
+              <dd>file is hidden, and is used for config <a href="http://bower.io/">Twitter Bower</a></dd>
+              <dt>"bower.json"</dt>
+              <dd> is the JSON file of <a href="http://bower.io/">Twitter Bower</a> (You can click the link to know more).</dd>
+              <dt>"Gruntfile.js"</dt>
+              <dd> is the configure file of <a href="http://gruntjs.com/">Grunt</a> (You can click the link to know more).
+                 It is used to configure or define tasks and load Grunt plugins.
+              </dd>
+              <dt>"package.json"</dt>
+              <dd> is the JSON file of <a href="http://gruntjs.com/">Grunt</a> (You can click the link to know more).
+                 This file is used by npm to store metadata for projects published as <a href="https://npmjs.org/">npm</a> modules. You will list grunt and the Grunt plugins your project needs as <a href="https://npmjs.org/doc/json.html#devDependencies">devDependencies</a> in this file.
+              </dd>
+            </dl>
+          </section>
+          <section id="bower">
+            <div class="page-header">
+              <h1> Dependencies Management with Bower</h1>
+            </div>
+            <p class="lead"> <a href="http://bower.io/">Bower</a> is a front-end package manager for the web by Twitter.</p>
+            <p>Flatify use Bower to manage all the front end dependencies, make things clean, tidy and simple.</p>
+            <p>If you haven't try Bower before, then give it a shot,<strong> it makes life easier</strong>, you'll fall in love with it.</p>
+            <p>Inside the <strong>bower.json</strong> file of Bower, you'll see the list dependencies (package name and version):</p>
+            <p>If you want to know more about the packages, you can <a href="http://bower.io/search/">click here. Search the package and click the link to know more.</a></p>
+            <pre> 
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "angular": "~1.3.0",
+    "angular-resource": "~1.3.0",
+    "angular-cookies": "~1.3.0",
+    "angular-sanitize": "~1.3.0",
+    "angular-route": "~1.3.0",
+    "angular-animate": "~1.3.0",
+    "angular-aria": "~1.3.0",
+    "angular-bootstrap": "~0.13.0",
+    "font-awesome": "~4.3.0",
+    "toastr": "~2.1.0",
+    "underscore": "~1.7.0",
+    "seiyria-bootstrap-slider": "~4.8.1",
+    "bootstrap": "~3.3.0",
+    "bootstrap-file-input": "~1.0.0",
+    "holderjs": "~2.3.1",
+    "jquery.easy-pie-chart": "~2.1.6",
+    "morris.js": "~0.5.1",
+    "jquery.slimscroll": "~1.3.1",
+    "jquery.easing": "~1.3.0",
+    "gauge.js": "~1.2.1",
+    "flot": "~0.8.3",
+    "jquery-spinner": "~0.1.5",
+    "jquery-steps": "~1.1.0",
+    "angular-wizard": "~0.4.0",
+    "weather-icons": "~1.3.2",
+    "textAngular": "1.3.11",
+    "flot.tooltip": "~0.8.0",
+    "angular-loading-bar": "~0.7.1",
+    "angular-scroll": "~0.7.0"
+  }</pre>
+          </section>
+          <section id="grunt">
+            <div class="page-header"> 
+              <h1>Automation with Grunt</h1>
+            </div>
+            <p class="lead"><a href="http://gruntjs.com/">Grunt</a> is a JavaScript task runner (Automation), save yourself from repetitive tasks.</p>
+            <dl class="dl-horizontal">
+              <dt>"Gruntfile.js"</dt>
+              <dd> is the configure file of <a href="http://gruntjs.com/">Grunt</a> (You can click the link to know more).
+                 It is used to configure or define tasks and load Grunt plugins.
+              </dd>
+              <dt>"package.json"</dt>
+              <dd> is the JSON file of <a href="http://gruntjs.com/">Grunt</a> (You can click the link to know more).
+                 This file is used by npm to store metadata for projects published as <a href="https://npmjs.org/">npm</a> modules. You will list grunt and the Grunt plugins your project needs as <a href="https://npmjs.org/doc/json.html#devDependencies">devDependencies</a> in this file.
+              </dd>
+            </dl>
+            <p>Inside <strong>package.json</strong> file, you'll see all the <a href="http://gruntjs.com/plugins">Grunt plugins</a> that help to automate the tasks.</p>
+            <p>And all the plugins are configured in <strong>Gruntfile.js</strong> file.</p>
+            <p>If you want to know more about the plugins, you can <a href="http://gruntjs.com/plugins">click here.</a></p>
+            <pre> "devDependencies": {
+    "connect-livereload": "~0.5.3",
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "~3.0.0",
+    "grunt-concurrent": "~1.0.0",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-compass": "~1.0.0",
+    "grunt-contrib-concat": "~0.5.0",
+    "grunt-contrib-connect": "~0.10.1",
+    "grunt-contrib-copy": "~0.8.0",
+    "grunt-contrib-cssmin": "~0.12.0",
+    "grunt-contrib-htmlmin": "~0.4.0",
+    "grunt-contrib-jade": "~0.14.0",
+    "grunt-contrib-jshint": "~0.11.0",
+    "grunt-contrib-less": "~1.0.0",
+    "grunt-contrib-uglify": "~0.9.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-injector": "^0.6.0",
+    "grunt-open": "~0.2.3",
+    "grunt-usemin": "~3.0.0",
+    "jshint-stylish": "^1.0.0",
+    "load-grunt-tasks": "~3.1.0",
+    "time-grunt": "~1.2.0"
+ }</pre>
+          </section>
+          <section id="run">
+            <div class="page-header">
+              <h1>How to Run it?</h1>
+            </div>
+            <p class="lead">You'll need to put the files on a server to run it. </p>
+            <p>So you can upload the <strong>"dist"</strong> folder to your server to run it. Or you can build a server locally.</p>
+            <p class="lead">Then How to build a server locally?</p>
+            <p><em>You can build a locally server using WAMP or MAMP (if you uses PHP). Also it's pretty easy to build one with Python (if you prefer python). And here we'll build a local server with NodeJS</em></p>
+            <p> <strong>Preparation:</strong> You'll need to install <a href="http://nodejs.org/">Node.js</a> (NPM comes along with it) and <a href="https://github.com/cloudhead/node-static">node-static</a></p>
+            <p><strong>Steps:</strong></p>
+            <p>It's very simple. Download <a href="http://nodejs.org/download/">Node.js here</a>  then install it, and install <a href="https://github.com/cloudhead/node-static">node-static</a> with one command line</p>
+            <pre>$ npm install -g node-static</pre>
+            <p>The Usage of node-static is very simple. Just enter the "dist" directory with command line, and type</p>
+            <pre>static</pre>
+            <p>It'll return something like this: </p>
+            <pre>serving "." at http://127.0.0.1:8080</pre>
+            <p>Then you can visit the template on http://127.0.0.1:8080 with your browser</p>
+          </section>
+          <section id="use">
+            <div class="page-header">
+              <h1>How to Use It (Develop with It)?</h1>
+            </div>
+            <p class="lead">In order to do development with it, first you'll need have the following tools installed:</p>
+            <li> <a href="http://nodejs.org/">Node.js</a> (NPM comes along with it), just download and install it, that's it, don't be afraid.</li>
+            <li> <a href="http://yeoman.io/">Yeoman </a>, <a href="http://bower.io/">Bower</a>, <a href="http://gruntjs.com/">Grunt-cli</a> for modern workflow.</li>
+            <li><a href="https://www.ruby-lang.org/en/">Ruby </a>(if you are using a Mac, then you already have it)
+              , <a href="http://sass-lang.com/">Sass </a>, <a href="http://compass-style.org/">Compass</a> for Sass CSS.
+            </li><br>
+            <p>And you'll need to know how some basis about them, click the links to learn more if you not familiar with these yet. <strong>If it's your first time using these tools</strong>, it's probably too complex or even overwhelming to you. You'd better find someone to help you.</p>
+            <p class="lead">If you already know how to use them, then just do a few things to start developing:</p>
+            <p>1. Enter "Flatify" folder with your command line tool.</p>
+            <p>2. Install all the NPM packages (for development) with NPM: </p>
+            <pre>$ npm install</pre>
+            <p>3. Install all the front end packages with Twitter Bower:</p>
+            <pre>$ bower install</pre>
+            <p>4. Then type<strong> grunt serve</strong> and you are ready to go.</p>
+            <pre>$ grunt serve</pre>
+            <p>By the way, if you want to build the distribution (production) version, simply run</p>
+            <pre>$ grunt serve:dist</pre><br>
+            <p>All the files for development are under <strong>./Flatify/client/</strong> folder.</p>
+          </section>
+          <section id="basic_html">
+            <div class="page-header">
+              <h1>Basic Template Structure</h1>
+            </div>
+            <p class="lead">The basic structure of template (index.html) is quiet simple. It contains 3 parts: <strong>Head</strong>, which load all the stylesheets. <strong>Body</strong>, which contains the content App.  <strong>Foot </strong>, which load all the scripts. </p>
+            <p class="lead">The Head</p>
+            <pre class="prettyprint linenums">&lt;!doctype html&gt;
+&lt;!--[if gt IE 8]&gt;&lt;!--&gt; &lt;html class="no-js"&gt; &lt;!--&lt;![endif]--&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta http-equiv='X-UA-Compatible' content='IE=edge'&gt;
+        &lt;title&gt;Web Application&lt;/title&gt;
+        &lt;meta name="description" content=""&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"&gt;
+        &lt;!-- Place favicon.ico and apple-touch-icon.png in the root directory --&gt;
+        &lt;link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'&gt;
+        &lt;!-- needs images, font... therefore can not be part of ui.css --&gt;
+        &lt;link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"&gt;
+        &lt;link rel="stylesheet" href="bower_components/weather-icons/css/weather-icons.min.css"&gt;
+        &lt;!-- end needs images --&gt;
+ 
+            &lt;link rel="stylesheet" href="styles/main.css"&gt;
+ 
+    &lt;/head&gt;</pre>
+            <p class="lead">The Body</p>
+            <pre class="prettyprint linenums">    &lt;body data-ng-app="app" id="app" data-custom-background data-off-canvas-nav&gt;
+        &lt;!--[if lt IE 9]&gt;
+            &lt;p class="browsehappy"&gt;You are using an &lt;strong&gt;outdated&lt;/strong&gt; browser. Please &lt;a href="http://browsehappy.com/"&gt;upgrade your browser&lt;/a&gt; to improve your experience.&lt;/p&gt;
+        &lt;![endif]--&gt;
+ 
+        &lt;div data-ng-controller="AppCtrl"&gt;
+            &lt;div data-ng-hide="isSpecificPage()"
+                 data-ng-cloak&gt;
+                &lt;section data-ng-include=" 'app/layout/header.html' "
+                     id="header" class="top-header"&gt;&lt;/section&gt;
+ 
+                &lt;aside data-ng-include=" 'app/layout/nav.html' "
+                     id="nav-container"&gt;&lt;/aside&gt;
+            &lt;/div&gt;
+ 
+            &lt;div class="view-container"&gt;
+                &lt;section data-ng-view id="content" class="animate-fade-up"&gt;&lt;/section&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;</pre>
+            <p class="lead">The Foot</p>
+            <pre class="prettyprint linenums">        &lt;!-- build:js scripts/vendor.js --&gt;
+        &lt;script src="bower_components/jquery/dist/jquery.min.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/angular/angular.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/angular-route/angular-route.min.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/angular-animate/angular-animate.min.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/angular-aria/angular-aria.min.js"&gt;&lt;/script&gt;
+        &lt;!-- endbuild --&gt;
+ 
+        &lt;!-- build:js scripts/ui.js --&gt;
+        &lt;script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/jquery-spinner/dist/jquery.spinner.min.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/jquery-steps/build/jquery.steps.min.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/toastr/toastr.min.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/bootstrap-file-input/bootstrap.file-input.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/jquery.slimscroll/jquery.slimscroll.min.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/raphael/raphael-min.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/morris.js/morris.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/flot/jquery.flot.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/flot/jquery.flot.resize.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/flot/jquery.flot.pie.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/flot/jquery.flot.stack.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/flot.tooltip/js/jquery.flot.tooltip.min.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/flot/jquery.flot.time.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/gauge.js/dist/gauge.min.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/jquery.easy-pie-chart/dist/angular.easypiechart.min.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/angular-wizard/dist/angular-wizard.min.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/textAngular/dist/textAngular-rangy.min.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/textAngular/dist/textAngular-sanitize.min.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/textAngular/dist/textAngular.min.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/angular-loading-bar/build/loading-bar.min.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/angular-scroll/angular-scroll.min.js"&gt;&lt;/script&gt;
+        &lt;script src="vendors/jquery.sparkline.min.js"&gt;&lt;/script&gt;
+        &lt;script src="vendors/skycons.js"&gt;&lt;/script&gt;
+        &lt;!-- endbuild --&gt;
+ 
+        &lt;!-- build:js({.tmp,client}) scripts/app.js --&gt;
+        &lt;!-- injector:js --&gt;
+        &lt;script src="app/app.module.js"&gt;&lt;/script&gt;
+        &lt;script src="app/chart/chart.module.js"&gt;&lt;/script&gt;
+        &lt;script src="app/form/form.module.js"&gt;&lt;/script&gt;
+        &lt;script src="app/layout/layout.module.js"&gt;&lt;/script&gt;
+        &lt;script src="app/table/table.module.js"&gt;&lt;/script&gt;
+        &lt;script src="app/ui/ui.module.js"&gt;&lt;/script&gt;
+        &lt;script src="app/chart/chart.controller.js"&gt;&lt;/script&gt;
+        &lt;script src="app/chart/chart.directive.js"&gt;&lt;/script&gt;
+        &lt;script src="app/chart/flot.controller.js"&gt;&lt;/script&gt;
+        &lt;script src="app/chart/morris.controller.js"&gt;&lt;/script&gt;
+        &lt;script src="app/core/app.controller.js"&gt;&lt;/script&gt;
+        &lt;script src="app/core/config.route.js"&gt;&lt;/script&gt;
+        &lt;script src="app/core/i18n.js"&gt;&lt;/script&gt;
+        &lt;script src="app/form/form.controller.js"&gt;&lt;/script&gt;
+        &lt;script src="app/form/form.directive.js"&gt;&lt;/script&gt;
+        &lt;script src="app/form/formCvalidation.controller.js"&gt;&lt;/script&gt;
+        &lt;script src="app/layout/layout.directive.js"&gt;&lt;/script&gt;
+        &lt;script src="app/table/table.controller.js"&gt;&lt;/script&gt;
+        &lt;script src="app/ui/ui.controller.js"&gt;&lt;/script&gt;
+        &lt;script src="app/ui/ui.directive.js"&gt;&lt;/script&gt;
+        &lt;script src="app/ui/ui.service.js"&gt;&lt;/script&gt;
+        &lt;!-- endinjector --&gt;
+        &lt;!-- endbuild --&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- Footer-->
+    <footer class="bs-footer">
+      <div class="container text-center">
+        <p>Copyright <span id="copyright"></span> <a href="http://iarouse.com/">iArouse.com</a></p>
+      </div>
+    </footer>
+    <!-- Scripts-->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/holder.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script src="assets/js/jquery.smooth-scroll.js"></script>
+    <script src="assets/js/application.js"></script>
+    <script>
+      $('.bs-sidenav a').smoothScroll();
+      window.prettyPrint && prettyPrint();
+    </script>
+  </body>
+</html>
