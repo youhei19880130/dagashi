@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'detail' => 'detail#index', as: :detail
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
