@@ -9,3 +9,6 @@
         = p.description
       div.product-button
         a.btn.btn-primary.btn-sm href="#" もっと詳しく>>
+
+div.paginator
+  = paginate @products, :window => 2
