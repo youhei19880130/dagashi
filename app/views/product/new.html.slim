@@ -1,0 +1,12 @@
+
+= form_for(:product) do |f|
+  = f.label :name
+  = f.text_field :name
+
+  = f.label :description
+  = f.text_field :description
+
+  = f.label :img_url
+  = f.file_field :img_url
+
+  = f.submit :submit

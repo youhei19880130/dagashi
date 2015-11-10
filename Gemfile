@@ -61,3 +61,7 @@ end
 
 # pagenation
 gem 'kaminari'
+
+# upload images
+gem 'carrierwave'
+gem 'rmagick'
