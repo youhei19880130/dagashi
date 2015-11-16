@@ -3,6 +3,27 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 // @import "cerulean/mixins";
 
+div.container { padding-top: 60px; }
+
+.navbar-toggle {
+  z-index: 2;
+}
+
+.navbar-brand-center {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  text-align:center;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .navbar-brand-center {
+    margin-left: 0 !important;
+  }
+}
+
 div.product-box {
   // @include border-radius;
   margin: 8px;
