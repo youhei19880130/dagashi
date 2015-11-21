@@ -3,7 +3,21 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 // @import "cerulean/mixins";
 
-div.container { padding-top: 60px; }
+i.fa-cog {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  padding: 10px 11px;
+  background-color: transparent;
+  background-image: none;
+  border-radius: 4px;
+  font-size: 32px;
+  color: #022a50;
+}
+
+.sidr ul li {
+  padding: 10px;
+}
 
 .navbar-toggle {
   z-index: 2;

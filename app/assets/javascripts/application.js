@@ -15,9 +15,27 @@
 //= require cerulean/loader
 //= require cerulean/bootswatch
 //= require turbolinks
+//= require sidr_min
 
 //= require bootstrap-sprockets
 
 $(document).ready(function(){
-    $('.dropdown-toggle').dropdown()
+  $('.dropdown-toggle').dropdown()
+
+  $('.navbar.navbar-default button.navbar-toggle')
+    .attr('data-toggle', '')
+    .attr('data-target', '')
+    .sidr({
+      source:   '.navbar-collapse.collapse',
+      renaming: false,
+      side:     'right',
+      onOpen: function() {
+        $('div.navbar-fixed-top').css('position', 'static');
+        $('div.navbar.navbar-default.second').css('margin-top', '-20px');
+      },
+      onClose: function() {
+        $('div.navbar-fixed-top').css('position', 'fixed');
+        $('div.navbar.navbar-default.second').css('margin-top', '50px');
+      }
+    });
 });

@@ -14,13 +14,14 @@ gem 'twitter-bootswatch-rails', '~> 3.1.1'
 gem 'twitter-bootswatch-rails-helpers'
 gem 'execjs'
 gem 'less-rails'
+# Use font-awesome
+gem 'font-awesome-sass', '~> 4.4.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 gem 'therubyracer'
-
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
