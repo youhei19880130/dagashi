@@ -60,9 +60,15 @@ ready = function(){
     zoom: 16,        // ズーム値
     center: latlng,    // 中心座標 [latlng]
   };
-
   // [canvas]に、[mapOptions]の内容の、地図のインスタンス([map])を作成する
   var map = new google.maps.Map( canvas , mapOptions ) ;
+  // マーカーのインスタンスは配列で管理しよう
+  var markers = [] ;
+  // マーカーのインスタンスを作成する
+  markers[0] = new google.maps.Marker({
+     map: map ,
+     position: new google.maps.LatLng(35.6610775, 139.6994961),
+  })
 };
 
 $(document).ready(ready)
