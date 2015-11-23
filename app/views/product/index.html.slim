@@ -1,7 +1,7 @@
 - @products.each do |p|
   div.product-box
     div.product-top
-      img src="http://up.gc-img.net/post_img_web/2015/03/5d22056fe7ff35437851906cedcf60df_3094.jpeg"
+      = image_tag asset_path(p.img_url)
     div.product-bottom
       div.product-title
         = p.name

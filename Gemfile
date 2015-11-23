@@ -16,6 +16,8 @@ gem 'execjs'
 gem 'less-rails'
 # Use font-awesome
 gem 'font-awesome-sass', '~> 4.4.0'
+# Use Slickjs
+gem 'jquery-slick-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views

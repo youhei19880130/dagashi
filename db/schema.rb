@@ -11,14 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151012021515) do
+ActiveRecord::Schema.define(version: 20151122174141) do
 
   create_table "products", force: :cascade do |t|
     t.string   "name",        limit: 255
     t.text     "description", limit: 65535
+    t.decimal  "price",                     precision: 11, scale: 5, default: 0.0, null: false
     t.string   "img_url",     limit: 255
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.datetime "created_at",                                                       null: false
+    t.datetime "updated_at",                                                       null: false
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.integer  "product_id", limit: 4,               null: false
+    t.integer  "score",      limit: 4,   default: 0, null: false
+    t.string   "comment",    limit: 255,             null: false
+    t.datetime "created_at",                         null: false
+    t.datetime "updated_at",                         null: false
   end
 
 end

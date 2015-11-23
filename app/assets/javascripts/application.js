@@ -16,10 +16,11 @@
 //= require cerulean/bootswatch
 //= require turbolinks
 //= require sidr_min
+//= require jquery.slick
 
 //= require bootstrap-sprockets
 
-$(document).ready(function(){
+ready = function(){
   $('.dropdown-toggle').dropdown()
 
   $('.navbar.navbar-default button.navbar-toggle')
@@ -38,4 +39,19 @@ $(document).ready(function(){
         $('div.navbar.navbar-default.second').css('margin-top', '50px');
       }
     });
-});
+
+  $('.carousel').slick();
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5&appId=971711982847446";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  $('.uiGrid ._51mz .pluginConnectButtonLayoutRoot ._3c9t').css('width','auto');
+};
+
+$(document).ready(ready)
+$(document).on('page:load', ready)

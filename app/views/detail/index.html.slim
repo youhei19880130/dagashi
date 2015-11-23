@@ -1,16 +1,46 @@
-h1
-  = @index.first.name
-img src="http://up.gc-img.net/post_img_web/2015/03/5d22056fe7ff35437851906cedcf60df_3094.jpeg" style="margin:10px;width:50%;float:left;"
-div style="margin:20px;"
-  p.text-info
-    = @index.first.description
-div style="text-align:center;"
-  = link_to "購入する", "https://www.amazon.co.jp/", :class => "btn btn-danger btn-lg", :style => "clear:both;width:60%;margin:30px;", :target => "_blank"
+div#fb-root
+
+div.main style="width:100%;"
+  div.carousel
+    div
+      = image_tag asset_path(@index.first.img_url)
+    div
+      = image_tag asset_path(@index.first.img_url)
+
 div
-  h3 レビュー
-  p.alert.alert-dismissible.alert-info
-    レビュー◆レビュー◆ レビュー◆ レビュー◆ レビュー◆ レビュー◆ レビュー◆ レビュー◆ レビュー◆ レビュー◆ レビュー◆ レビュー◆ レビュー◆
-  p.alert.alert-dismissible.alert-info
-    レビュー◆レビュー◆レビュー◆レビュー◆レビュー◆レビュー◆レビュー◆レビュー◆レビュー◆レビュー◆レビュー◆レビュー◆レビュー◆レビュー◆
-div style="text-align:center;"
-  = link_to "購入する", "https://www.amazon.co.jp/", :class => "btn btn-danger btn-lg", :style => "clear:both;width:60%;margin:30px;", :target => "_blank"
+  div style="font-size:30px;"
+    = @index.first.name
+  div style="font-size:30px;float:left;"
+    = "$ " + @index.first.price.to_s + "　"
+  div style="font-size:30px;"
+    - disp_score = @avg_score.first.avg_score.round()
+    - vac_score = 0
+    - while disp_score > 0
+      i.fa.fa-star
+      - vac_score += 1
+      - disp_score -= 1
+    - while 5 - vac_score > 0
+      i.fa.fa-star-o
+      - vac_score += 1
+    = "( " + @avg_score.first.count_score.to_s + " )"
+
+div style="margin:10px"
+  div.fb-like
+
+span
+  = @index.first.name + " is"
+  br
+  = @index.first.description
+
+div.review
+  h4 review
+  div style="margin:10px 0px;"
+    div.icon style="float:left;"
+      img src="http://business-icon.com/material/011.png" style="width:20%;"
+    div.arrow_box
+      | 　　　
+  div style="margin:10px 0px;"
+    div.icon style="float:left;"
+      img src="http://business-icon.com/material/011.png" style="width:20%;"
+    div.arrow_box
+      | 　　　

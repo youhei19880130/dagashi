@@ -1,3 +1,57 @@
 // Place all the styles related to the detail controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.slick-prev {
+  z-index: 1;
+  left: 0px !important;
+}
+
+.slick-next {
+  right: 10px !important;
+}
+
+.slick-next:before, .slick-prev:before {
+  font-size: 30px !important;
+}
+
+.slick-slider {
+  margin-bottom: 20px !important;
+}
+
+img {
+  width: 100%
+}
+
+// reviewの吹き出し
+.arrow_box {
+  position: relative;
+  left: 20%;
+  background: #ffffff;
+  border: 1px solid #000000;
+  width: 80%;
+}
+
+.arrow_box:after, .arrow_box:before {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.arrow_box:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-right-color: #ffffff;
+  border-width: 20px;
+  margin-top: -30px;
+}
+.arrow_box:before {
+  border-color: rgba(0, 0, 0, 0);
+  border-right-color: #000000;
+  border-width: 21px;
+  margin-top: -31px;
+}
