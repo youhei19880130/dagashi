@@ -8,7 +8,7 @@
       div.product-description
         = p.description
       div.product-button
-        = link_to "もっと詳しく>>", detail_path(id: p.id), :class => "btn btn-primary btn-sm"
+        = link_to "MORE INFO HERE", detail_path(id: p.id), :class => "btn btn-primary btn-sm"
 
 div.paginator
   = paginate @products, :window => 2

@@ -35,16 +35,17 @@ div style="margin-bottom:10%;"
   br
   = @index.first.description
 
+- r = Random.new().rand(7) + 1
 div.review style="margin-bottom:20px;"
-  div style="margin:10px 0px;"
-    div.icon style="float:left;width:20%;"
-      img src="http://business-icon.com/material/011.png" style="height:auto;width:100%;"
-    div.arrow_box style="padding:20px 0;"
+  div.question_Box
+    div.question_image
+      img.icon src="/uploads/product/review_icon/#{r}.jpg"
+    div.arrow_question
       = @reviews.first.comment
-  div style="margin:10px 0px;"
-    div.icon style="float:left;width:20%;"
-      img src="http://business-icon.com/material/011.png" style="height:auto;width:100%;"
-    div.arrow_box style="padding:20px 0;"
+  div.question_Box
+    div.question_image
+      img.icon src="/uploads/product/review_icon/#{r + 1}.jpg"
+    div.arrow_question
       = @reviews.second.comment
   - if @reviews.size >2
     p style="text-align:right;font-size:120%;"

@@ -20,24 +20,40 @@
 }
 
 img {
-  width: 100%
+  width: 100%;
 }
 
-// reviewの吹き出し
-.arrow_box {
-  position: relative;
-  left: 20%;
-  background: #ffffff;
-  border: 1px solid #000000;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
+img.icon {
   width: 80%;
-  box-shadow:1px 1px;
+  height: auto;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
 }
 
-.arrow_box:after, .arrow_box:before {
-  right: 100%;
+/*============================================================
+フキダシデザイン
+============================================================*/
+.arrow_answer,
+.arrow_question {
+  position: relative;
+  background: #fff;
+  border: 1px solid #c8c8c8;
+  padding: 20px 15px;
+  border-radius: 10px;
+  width: 70%;
+  font-size: 13px;
+}
+
+.arrow_question {
+  float: right;
+  margin-right: 20px;
+}
+
+.arrow_answer:after,
+.arrow_answer:before,
+.arrow_question:after,
+.arrow_question:before {
   top: 50%;
   border: solid transparent;
   content: " ";
@@ -47,15 +63,44 @@ img {
   pointer-events: none;
 }
 
-.arrow_box:after {
+.arrow_question:after,
+.arrow_question:before { right: 100%; }
+
+.arrow_answer:after,
+.arrow_answer:before { left: 100%; }
+
+.arrow_answer:after,
+.arrow_question:after {
   border-color: rgba(255, 255, 255, 0);
-  border-right-color: #ffffff;
-  border-width: 10px;
+  border-width: 15px;
   margin-top: -15px;
 }
-.arrow_box:before {
-  border-color: rgba(0, 0, 0, 0);
-  border-right-color: #000000;
-  border-width: 11px;
+
+.arrow_answer:after { border-left-color: #fff ; }
+.arrow_question:after { border-right-color: #fff ; }
+.arrow_answer:before,
+.arrow_question:before {
+  border-color: rgba(200, 200, 200, 0);
+  border-width: 16px;
   margin-top: -16px;
+}
+
+.arrow_answer:before { border-left-color: #c8c8c8; }
+.arrow_question:before { border-right-color: #c8c8c8; }
+.question_image {
+  float: left;
+  width: 20%;
+}
+
+.answer_image {
+  float: right;
+  margin-right: 20px;
+}
+
+.answer_image img,
+.question_image img { border-radius: 50px; }
+
+.question_Box {
+  margin-bottom: 25px;
+  overflow: hidden;
 }
