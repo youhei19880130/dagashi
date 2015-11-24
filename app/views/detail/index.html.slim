@@ -14,7 +14,7 @@ div
     = "$ " + @index.first.price.to_s
   div style="font-size:30px;"
     ul style="display:table;table-layout:fixed;text-align:center;float:left;"
-      - if @avg_score.nil?
+      - if @avg_score.present?
         - disp_score = @avg_score.first.avg_score.round()
         - vac_score = 0
         - while disp_score > 0
@@ -36,7 +36,7 @@ div style="margin-bottom:10%;"
   br
   = @index.first.description
 
-- if @reviews.nil?
+- if @reviews.present?
   - r = Random.new().rand(7) + 1
   div.review style="margin-bottom:20px;"
     div.question_Box
