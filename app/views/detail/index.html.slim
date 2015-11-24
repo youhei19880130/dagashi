@@ -14,20 +14,21 @@ div
     = "$ " + @index.first.price.to_s
   div style="font-size:30px;"
     ul style="display:table;table-layout:fixed;text-align:center;float:left;"
-      - disp_score = @avg_score.first.avg_score.round()
-      - vac_score = 0
-      - while disp_score > 0
-        li style="display:table-cell;vertical-align:middle;"
-          i.fa.fa-star
-        - vac_score += 1
-        - disp_score -= 1
-      - while 5 - vac_score > 0
-        li style="display:table-cell;vertical-align:middle;"
-          i.fa.fa-star-o
-        - vac_score += 1
-    = "( " + @avg_score.first.count_score.to_s + " )"
+      - if @avg_score.nil?
+        - disp_score = @avg_score.first.avg_score.round()
+        - vac_score = 0
+        - while disp_score > 0
+          li style="display:table-cell;vertical-align:middle;"
+            i.fa.fa-star
+          - vac_score += 1
+          - disp_score -= 1
+        - while 5 - vac_score > 0
+          li style="display:table-cell;vertical-align:middle;"
+            i.fa.fa-star-o
+          - vac_score += 1
+        = "( " + @avg_score.first.count_score.to_s + " )"
 
-div style="margin:10px 0;"
+div style="margin:10px 0;clear:left;"
   div.fb-like width="160px" layout="button_count"
 
 div style="margin-bottom:10%;"
@@ -35,21 +36,22 @@ div style="margin-bottom:10%;"
   br
   = @index.first.description
 
-- r = Random.new().rand(7) + 1
-div.review style="margin-bottom:20px;"
-  div.question_Box
-    div.question_image
-      img.icon src="/uploads/product/review_icon/#{r}.jpg"
-    div.arrow_question
-      = @reviews.first.comment
-  div.question_Box
-    div.question_image
-      img.icon src="/uploads/product/review_icon/#{r + 1}.jpg"
-    div.arrow_question
-      = @reviews.second.comment
-  - if @reviews.size >2
-    p style="text-align:right;font-size:120%;"
-      = link_to "Read more", "#"
+- if @reviews.nil?
+  - r = Random.new().rand(7) + 1
+  div.review style="margin-bottom:20px;"
+    div.question_Box
+      div.question_image
+        img.icon src="/uploads/product/review_icon/#{r}.jpg"
+      div.arrow_question
+        = @reviews.first.comment
+    div.question_Box
+      div.question_image
+        img.icon src="/uploads/product/review_icon/#{r + 1}.jpg"
+      div.arrow_question
+        = @reviews.second.comment
+    - if @reviews.size >2
+      p style="text-align:right;font-size:120%;"
+        = link_to "Read more", "#"
 
 div.shop
   div
